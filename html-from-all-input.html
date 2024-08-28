@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Inputs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 400px;
+      }
+      label {
+        margin-bottom: 5px;
+      }
+      input,
+      select,
+      textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .checkbox-group,
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Form Inputs</h1>
+    <form>
+      <!-- Text Input -->
+      <label for="text">Text:</label>
+      <input type="text" id="text" name="text" />
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+
+      <!-- Email Input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <!-- Number Input -->
+      <label for="number">Number:</label>
+      <input type="number" id="number" name="number" />
+
+      <!-- Date Input -->
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" />
+
+      <!-- Time Input -->
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" />
+
+      <!-- Color Input -->
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" />
+
+      <!-- File Input -->
+      <label for="file">File:</label>
+      <input type="file" id="file" name="file" />
+
+      <!-- Range Input -->
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range" min="0" max="100" />
+
+      <!-- Checkbox Input -->
+      <div class="checkbox-group">
+        <label>Checkboxes:</label>
+        <label
+          ><input type="checkbox" name="checkbox1" value="Option 1" /> Option
+          1</label
+        >
+        <label
+          ><input type="checkbox" name="checkbox2" value="Option 2" /> Option
+          2</label
+        >
+      </div>
+
+      <!-- Radio Input -->
+      <div class="radio-group">
+        <label>Radio Buttons:</label>
+        <label
+          ><input type="radio" name="radio" value="Option 1" /> Option 1</label
+        >
+        <label
+          ><input type="radio" name="radio" value="Option 2" /> Option 2</label
+        >
+      </div>
+
+      <!-- Select Input -->
+      <label for="select">Select:</label>
+      <select id="select" name="select">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+      <!-- Textarea Input -->
+      <label for="textarea">Textarea:</label>
+      <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
